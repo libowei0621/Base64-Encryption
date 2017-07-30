@@ -75,7 +75,7 @@ public class Base64 {
 	
 	public static String decode(String input)
 	{
-		if(input == null || input.length() < 1)
+		if(input == null || input.length() < 1 || input.length() % 4 != 0)
 		{
 			return "";
 		}
